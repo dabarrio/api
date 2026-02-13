@@ -72,6 +72,31 @@ php artisan serve
 
 La API estará disponible en `http://127.0.0.1:8000`
 
+## Probar la API
+
+### Colección de Postman/Bruno
+
+El proyecto incluye una colección completa de Postman con todos los endpoints: `CMS_API.postman_collection.json`
+
+**Para importar en Postman:**
+1. Abrir Postman
+2. Click en "Import" (esquina superior izquierda)
+3. Seleccionar el archivo `CMS_API.postman_collection.json`
+4. La colección incluye:
+   - ✅ Todos los 19 endpoints organizados por carpetas
+   - ✅ Variables de entorno configuradas (`base_url`, `auth_token`)
+   - ✅ Script automático para guardar el token después del login
+   - ✅ Ejemplos de requests con datos de prueba
+
+**Para usar:**
+1. Ejecutar el request `Authentication > Login` con `admin@cms.com` / `password123`
+2. El token se guarda automáticamente en la variable `auth_token`
+3. Los demás requests ya están configurados para usar el token
+
+**Para importar en Bruno/Thunder Client:**
+- Ambos soportan el formato Postman Collection v2.1
+- Usar la función "Import" de cada herramienta
+
 ## Estructura del Proyecto
 
 ```
